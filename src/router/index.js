@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import VuexPage from '../views/VuexPage.vue'
 import NormalPage from '../views/NormalPage.vue'
+import GridPage from '../views/GridPage.vue'
+import EffectsPage from '../views/EffectsPage.vue'
 
 const routes = [
   {
@@ -12,6 +14,16 @@ const routes = [
     path: '/normal-page',
     name: 'NormalPage',
     component: NormalPage
+  },
+  {
+    path: '/grid-page',
+    name: 'gridPage',
+    component: GridPage
+  },
+  {
+    path: '/effects-page',
+    name: 'effectsPage',
+    component: EffectsPage
   }
 ]
 

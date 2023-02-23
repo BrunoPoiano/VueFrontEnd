@@ -1,6 +1,7 @@
 <template>
   <div>
     <nav-bar />
+    <!-- <theme-switcher /> -->
   </div>
   <div class="views">
     <router-view/>
@@ -9,14 +10,15 @@
 
 <script >
 import NavBar from './components/NavBar.vue'
+// import themeSwitcher from './components/themeSwitcher.vue'
 export default{
-  components: { NavBar },
+  components: { 
+    NavBar,
+    // themeSwitcher,
+  },
 }
 </script>
 
-<style lang='stylus'>
-.views{
-  padding: 20px;
-  height: 100%;
-}
+<style lang='scss'>
+
 </style>

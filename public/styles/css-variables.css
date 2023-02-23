@@ -1,0 +1,114 @@
+:root {
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-card-heading: hsl(0 0% 25%);
+    --clr-text-title: hsl(0 0% 20%);
+    --clr-text-content: hsl(0 0% 50%);
+    --clr-text: hsl(0 0% 15%);
+
+    --clr-theme-picker: #fff;
+    --clr-radio: #000;
+
+    --diagonal-linear-gradient: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+
+    --spikes-linear-gradient: linear-gradient(to right, #fdc830, #f37335);
+    --spike-svg: url(assets\svgs\spikes.svg);
+
+    --wavy-linear-gradient: linear-gradient(to right, #00f260, #0575e6);
+
+    --clr-bg-mouse-tracking: hsl(222, 45%, 7%);
+    --clr-txt-mouse-tracking: hsl(12, 100%, 63%);
+
+    --clr-neon-button: rgba(54, 97, 183, 0.926);
+
+    --card-animation-bg: url(@\assets\card-bg.jpg);
+}
+
+body{
+    font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.color-picker input[type="radio"]#light {
+    --clr-radio: grey;
+}
+
+.color-picker input[type="radio"]#pink {
+    --clr-radio: pink;
+}
+
+.color-picker input[type="radio"]#blue {
+    --clr-radio: blue;
+}
+
+.color-picker input[type="radio"]#green {
+    --clr-radio: green;
+}
+
+.color-picker input[type="radio"]#dark {
+    --clr-radio: #111;
+}
+
+:root:has(#pink:checked) {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-card-heading: hsl(310 56% 70%);
+    --clr-text-title: hsl(310 86% 49%);
+    --clr-text-content: hsl(310 50% 50%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-theme-picker: #ffe5;
+
+    --diagonal-linear-gradient: linear-gradient(45deg, #833ab4, #711dfd, #fcb045);
+}
+
+:root:has(#blue:checked) {
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-card-heading: hsl(209 56% 70%);
+    --clr-text-title: hsl(209 86% 49%);
+    --clr-text-content: hsl(209 50% 50%);
+    --clr-text: hsl(209 50% 15%);
+
+    --diagonal-linear-gradient: linear-gradient(45deg, #22c1c3, #fdbb2d, #00d4ff);
+}
+
+:root:has(#green:checked) {
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-card-heading: hsl(109 56% 70%);
+    --clr-text-title: hsl(109 86% 49%);
+    --clr-text-content: hsl(109 50% 50%);
+    --clr-text: hsl(109 50% 15%);
+
+    --diagonal-linear-gradient: linear-gradient(45deg, #3f5efb, #00d4ff, #fc466b);
+}
+
+:root:has(#dark:checked) {
+    --clr-body-bg: hsl(0deg 0% 11%);
+    --clr-card-bg: hsl(0deg 0% 13%);
+    --clr-card-heading: hsl(0deg 0% 29%);
+    --clr-text-title: hsl(0deg 0% 32%);
+    --clr-text-content: hsl(0deg 0% 51%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-theme-picker: #3a3a3a;
+
+    --diagonal-linear-gradient: linear-gradient(45deg, #833ab4, #711dfd, #fcb045);
+    --clr-neon-button: rgba(252, 69, 69, 0.926);
+}
+
+body {
+    margin: 0px;
+    background: var(--clr-body-bg);
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
